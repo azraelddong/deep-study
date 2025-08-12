@@ -1,0 +1,18 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: study-kafka
+  profiles:
+    active: @profiles.active@
+
+logging:
+  level:
+    org.example: @logging.level@
+  file:
+    name: /data/log/${spring.application.name}.log
+  logback:
+    rollingpolicy:
+      file-name-pattern: /data/log/${spring.application.name}-%d{yyyy-MM-dd}.%i.log
+      max-history: 180
+      max-file-size: 20MB
