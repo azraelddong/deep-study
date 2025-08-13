@@ -1,4 +1,4 @@
-package org.example.kafka;
+package org.example.netty.kafka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

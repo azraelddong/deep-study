@@ -16,6 +16,7 @@
     <modules>
         <module>study-mq</module>
         <module>mockito</module>
+        <module>netty</module>
     </modules>
 
     <properties>
@@ -133,6 +134,11 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>${logback.version}</version>  <!-- 替换为你使用的Logback版本 -->
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-bom</artifactId>
+                <version>4.1.101.Final</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
